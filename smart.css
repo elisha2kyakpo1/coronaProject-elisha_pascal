@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aqua;
+    text-align: justify;
+    background-image: url(https://static4.depositphotos.com/1011764/302/i/450/depositphotos_3023431-stock-photo-brain.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: exclusion;
+}
+.navigation a{
+    text-decoration: none;
+}
+ul li a{
+    list-style-type: none;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.address {
+    text-align: center;
+    text-decoration: solid;
+    text-size-adjust: 5px;
+}
+
+.quote {
+    text-align: center;
+}
+
+.nav1 {
+    padding: 14px 16px;
+    background-color: azure;
+}
+
+.navigation {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-size: medium;
+    font-style: normal;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.image {
+    border-style: dashed;
+    padding: 0%;
+    margin: auto;
+    height: auto;
+    width: auto;
+    image-resolution: 100px;
+    ;
+}
+
+.Intro {
+    font-size: larger;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links li a{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px; 
+    box-sizing: border-box; 
+    padding-top: 12px; 
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-top: 0;
+
+}
+
+.links li{
+    display: inline;
+    background-color: black;
+}
+
+.links li a:hover{
+    background-color: skyblue;
+}
+.home{
+    align-self: flex-start;
+}
