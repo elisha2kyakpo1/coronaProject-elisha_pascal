@@ -63,13 +63,12 @@ a:hover {
 }
 
 .image {
-    border-style: none;
-    padding: 0%;
+    display: inline-block;
+    border-style: double;
     margin: auto;
     height: 300px;
     width: 500px;
     image-resolution: 100px;
-    ;
 }
 
 .Intro {
@@ -109,4 +108,17 @@ a:hover {
 
 .home {
     align-self: flex-start;
+}
+
+.form {
+    padding-left: 1cm;
+}
+
+.button {
+    background-color: green;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
