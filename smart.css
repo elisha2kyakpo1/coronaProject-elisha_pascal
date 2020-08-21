@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     background-color: aqua;
@@ -12,6 +8,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-blend-mode: screen;
+    padding-top: 0;
+    margin: 0 0 20px 0;
 }
 
 .navigation a {
@@ -41,19 +39,16 @@ ul li a {
 }
 
 .nav1 {
-    padding: 14px 16px;
-    background-color: azure;
-    te
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .navigation {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    margin: auto;
-    font-size: medium;
-    font-style: normal;
-    color: whitesmoke;
     text-align: center;
 }
 
@@ -82,7 +77,6 @@ a:hover {
     font-size: 18px;
     text-align: center;
     list-style-type: none;
-    box-sizing: border-box;
     width: 200px;
     height: 50px;
     box-sizing: border-box;
@@ -99,19 +93,19 @@ a:hover {
 
 .links li {
     display: inline;
-    background-color: black;
+    background-color:
 }
 
 .links li a:hover {
     background-color: skyblue;
 }
 
-.home {
-    align-self: flex-start;
+.home:active {
+    background-color: chartreuse;
 }
 
 .form {
-    padding-left: 1cm;
+    padding-left: 1px;
 }
 
 .button {
@@ -121,4 +115,10 @@ a:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
