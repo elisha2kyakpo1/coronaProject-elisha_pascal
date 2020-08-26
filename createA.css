@@ -16,7 +16,10 @@ input{
 
 label{
     font-size: 20px;
-
+}
+label::after{
+    content: "*";
+    color: red;
 }
 input:focus{
     outline: none;
@@ -25,14 +28,12 @@ input:focus{
 input:valid{
     border: 1px solid forestgreen;
 }
-input:invalid{
-    border: 1px solid red;
-}
+
 .btn-sub{
     padding: 8px 15px;
     font-size: 16px;
     border-radius: 5px;
-    background-color: lightsteelblue;
+    background-color: deepskyblue;
     cursor: pointer;
 }
 p{
