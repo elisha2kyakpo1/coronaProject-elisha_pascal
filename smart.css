@@ -1,6 +1,7 @@
-
-
 body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: aqua;
     text-align: justify;
     background-image: url(https://static4.depositphotos.com/1011764/302/i/450/depositphotos_3023431-stock-photo-brain.jpg);
@@ -10,14 +11,8 @@ body {
     background-blend-mode: screen;
     padding-top: 0;
     margin: 0 0 20px 0;
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-ul li a {
-    list-style-type: none;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .introduction {
@@ -38,6 +33,7 @@ ul li a {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .nav1 {
     background-color: darkgrey;
     margin: 0;
@@ -52,6 +48,8 @@ ul li a {
     text-align: center;
 }
 
+=======
+>>>>>>> 222f9646c5bd466de64f7f7194b440859cdfcb15
 a:hover {
     background-color: aliceblue;
     color: black;
@@ -59,17 +57,28 @@ a:hover {
 
 .image {
     display: inline-block;
-    border-style: double;
-    margin: auto;
-    height: 300px;
-    width: 500px;
+    margin: 0;
+    height: 100px;
+    width: 300px;
     image-resolution: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 0;
 }
 
 .Intro {
     font-size: larger;
-    font-weight: 100;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    animation-name: intro;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
 }
 
 .links li a {
@@ -77,27 +86,29 @@ a:hover {
     font-size: 18px;
     text-align: center;
     list-style-type: none;
-    width: 200px;
-    height: 50px;
+    height: 100%;
     box-sizing: border-box;
-    padding-top: 12px;
+    padding: 12px;
     color: white;
+    text-decoration: none;
+}
+.links li{
+    width: 150px;
 }
 
 .links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0;
-    padding-top: 0;
-}
-
-.links li {
-    display: inline;
-    background-color:
+    padding: 0;
+    background-color: coral;
+    list-style-type: none;
+    
 }
 
 .links li a:hover {
-    background-color: skyblue;
+    background-color: lightgrey;
+    color: black;
 }
 
 .home:active {
@@ -116,9 +127,95 @@ a:hover {
     text-decoration: none;
     display: inline-block;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: azure;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 5%;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+
+.footer a {
+    text-decoration: none;
+    text-justify: auto;
+}
+.social{
+    text-align: center;
+    width: 33.33333333%;
+}
+.fab{
+    font-size: 25px;
+    padding: 10px;
+}
+.social a{
+    background-color: blueviolet;
+    display: block;
+    padding: 20px;
+    margin: 5px;
+}
+
+.contact {
+    text-align: center;
+    padding: 0.5cm 0cm 0cm 0cm;
+    width: 33.33333333%;
+}
+
+.about {
+    text-align: center;
+    padding: 0.5cm 0cm 0cm 0cm;
+    width: 33.33333333%;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@keyframes intro{
+    0% {color: black;}
+    25% {color: coral;}
+    50% {color: forestgreen;}
+    100% {color: rgb(139, 38, 34);}
+}
+
+@media screen and (max-width: 600px){
+    .links li a {
+        display: block;
+        margin: 0;
+        width: 50%;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+    }
+    .home{
+        color: white;
+        background-color: black;
+    }
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+hr{
+    width: 300px;
 }
